@@ -1,0 +1,26 @@
+stages:
+  - test
+  - staging
+
+test:
+  image: node:latest
+  stage: test
+  script:
+    - npm install
+    - npm run test
+  only:
+    - master
+  tags:
+    - docker
+
+staging:
+  stage: staging
+  script:
+    - apt-get update -qy
+    - apt-get install -y ruby-dev
+    - gem install dpl
+    - dpl --provider=heroku --app=${REPO_NAME} --api-key=${HEROKU_API}
+  only:
+    - master
+  tags:
+    - docker
