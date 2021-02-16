@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React Ubah Dikid
+          Halo ubah sedikit dari ini untuk test CICD
         </a>
       </header>
     </div>
