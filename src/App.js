@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Halo ubah sedikit dari ini untuk test CICD
+          Halo ubah lagi
         </a>
       </header>
     </div>
