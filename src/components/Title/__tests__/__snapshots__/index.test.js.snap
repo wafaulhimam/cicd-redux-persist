@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component Title should render title component perfectly 1`] = `
+<p>
+  Test 123
+</p>
+`;
+
+exports[`Title should render title component correctly 1`] = `ShallowWrapper {}`;
